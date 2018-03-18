@@ -1,0 +1,10 @@
+# this function finds all primes less than or equal to n by successively eliminating all multiples of known primes, starting at 2
+def sieveOfErastosthenes(n):
+    primeList = []
+    prime = []
+    for i in range(2,n+1): 
+        if i not in primeList and i != 0:
+            prime.append(i)
+            for j in range(i**2,n+1,i):
+                primeList.append(j)
+    return(prime) 
