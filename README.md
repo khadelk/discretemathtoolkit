@@ -1,1 +1,1 @@
-Code for discrete mathematical notation, algorithms, functions, etc. 
+Python code for discrete mathematical functions and algorithms
