@@ -1,0 +1,14 @@
+# finds the prime factorization of a given number and returns a list of all its prime factors
+def primeFactorization(n):
+    r = n
+    myList = []
+    while r!=1:
+        for i in range(2,n+1):
+            if primality(i):
+                while True:
+                    if r % i == 0: 
+                        myList.append(i)
+                        r = r//i 
+                    else:
+                        break
+    return (myList) 
