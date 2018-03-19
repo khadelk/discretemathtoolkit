@@ -1,3 +1,17 @@
+def theDivisor(num):
+    c = 0
+    for i in range(1,num+1):
+        if num % i == 0:
+            c += 1
+    return c
+        
+def primality(n):
+    div = theDivisor(n)
+    if div == 2:
+        return True
+    else:
+        return False 
+
 # finds the prime factorization of a given number and returns a list of all its prime factors
 def primeFactorization(n):
     r = n
